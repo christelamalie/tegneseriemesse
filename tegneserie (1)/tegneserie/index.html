@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+<title>index | tegneseriemesse</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<link rel="stylesheet" href="stylesheet.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+<!-- Global menu i siden -->
+<nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" >Close Menu</a>
+  <div class="w3-container">
+    <img class="img-fluid" style="max-width: 200px; margin:10px;" src="images/tegneseriemesse_logo2_gul.svg" alt="logo">
+  </div>
+  <div class="w3-bar-block">
+    <a href="#hjem" onclick="w3_close()" class="w3-bar-item ">Hjem</a> 
+    <a href="#billet" onclick="w3_close()" class="w3-bar-item ">Billetter</a> 
+    <a href="#gæster" onclick="w3_close()" class="w3-bar-item ">Gæster</a> 
+    <a href="#udstillere" onclick="w3_close()" class="w3-bar-item ">Udstillere</a> 
+    <a href="#sponsorer" onclick="w3_close()" class="w3-bar-item ">Sponsorer</a>
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
+  <span>Company Name</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+  <!-- Header -->
+  <div class="w3-container" style="margin-top:80px" id="hjem">
+    <h1 class="w3-xxxlarge">TEGNESERIEMESSE</h1>
+    <h2 class="w3-xxlarge w3-text-red">12.-14. oktober i K.B. Hallen</h2>
+    <hr class="streg" style="width:50px;border:3px solid #f44336; border-radius:5px" color="#f44336">
+  </div>
+  
+  <!-- Photo grid (modal) -->
+  <div class="imgbody">
+    <div class="image">
+      <div class="img img1">
+      </div>
+      <div class="img img2" >
+     <!-- Billede fra "Copenhagen Comics" -->
+      </div>
+      <div class="img img3">
+        
+      </div>
+    </div>
+    </div>
+
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xxlarge w3-display-topright"></span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+
+  <!-- Billetter -->
+  <div class="w3-container" id="billet" style="margin-top:75px">
+      <div class="w3-half">
+            <h2 class="w3-xxlarge w3-text-red">BILLETTER</h2>
+            <hr class="streg" style="width:50px;border:3px solid #f44336; border-radius:5px" color="#f44336">
+            <p>Der er stadig billetter!</p>
+            <p >Men du må hellere skynde dig, for der er snart udsolgt! Du kan bl.a. møde vores gæster Morten Hesseldahl, Peter Snejbjerg og Jakob Martin Strid. Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt mollitia ullam excepturi laudantium beatae libero repellendus officiis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex similique nobis deserunt. Vel a distinctio molestiae modi tempora sunt sint.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam, libero. Id totam quis ipsum explicabo quam esse iste voluptates vitae?</p>
+      </div>
+      
+      <img class="w3-half" style="max-width:400px" src="images/tegneseriemesse-billetter.svg" alt="grafik af billetter til tegneseriemessen">
+  </div>
+    
+  <div class="w3-container" id="billetter" style="margin-top:75px">
+    <div class="w3-row-padding billet">
+
+      <div class="w3-third w3-margin-bottom">
+        <ul class="w3-ul w3-light-grey w3-center billetboks-to">
+          <li class="w3-large w3-padding-10 kasse dagsbillet">Dagsbillet</li>
+          <li class="w3-padding-16">Vælg i mellem fredag, lørdag og søndag</li>
+          <li class="w3-padding-16">Spring billetkøen over</li>
+          <li class="w3-padding-16">Èn time i fotozonen</li>
+          <li class="w3-padding-16">5% hos Bog&Idé på messen</li>
+          <li class="w3-padding-16">
+            <h3>399 kr</h3>
+          </li>
+          <li class="w3-light-grey w3-padding-24 kasse">
+            <button class="w3-button dagsbillet w3-padding-large w3-hover-black kasse">Køb billet</button>
+          </li>
+        </ul>
+      </div>
+          
+      <div class="w3-third"> 
+        <ul class="w3-ul w3-light-grey w3-center billetboks">
+          <li class="w3-red w3-large w3-padding-10 kasse">Partoutbillet</li>
+          <li class="w3-padding-16">Gælder hele weekenden</li>
+          <li class="w3-padding-16">Spring køen over i entréen</li>
+          <li class="w3-padding-16">Fri adgang i lounge- og fotozonen</li>
+          <li class="w3-padding-16">10% hos Bog&Idé på messen</li>
+          <li class="w3-padding-16">
+            <h3>799 kr</h3>
+          </li>
+          <li class="w3-light-grey w3-padding-24 kasse">
+            <button class="w3-button w3-red w3-padding-large w3-hover-black kasse">Køb billet</button>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+
+
+  </div>
+  
+  <!-- Gæster -->
+  <div class="w3-container" id="gæster" style="margin-top:75px">
+    <h2 class="w3-xxlarge w3-text-red">GÆSTER</h2>
+    <hr class="streg" style="width:50px;border:3px solid #f44336; border-radius:5px" color="#f44336">
+    <p>The best team in the world.</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita, fugit est. Esse magnam nulla consequuntur aspernatur quia labore possimus perspiciatis, aliquid reiciendis accusantium repellendus totam delectus odit autem asperiores impedit animi itaque facere, nobis dolor culpa? Quasi temporibus dicta expedita, dignissimos dolorum reprehenderit maiores corporis mollitia maxime error porro voluptatibus?
+    </p>
+  </div>
+
+  <!-- The Team -->
+  <div class="w3-row-padding">
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="images/tegneseriemesse_profil3.svg" alt="John" style="width:100%">
+        <div class="w3-container">
+          <h4>Morten Hesseldahl</h4>
+          <p class="w3-opacity">Forfatter, direktør for Gyldendal</p>
+          <p>Morten har skrevet en lang række tegneserier, bl.a. en meget rost tegneserierække om Danmark under besættelsen. Han har desuden været direktør for flere forlag.</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="images/tegneseriemesse_profil2.svg" alt="Jane" style="width:100%">
+        <div class="w3-container">
+          <h4>Peter Snejbjerg</h4>
+          <p class="w3-opacity">Tegneserieforfatter</p>
+          <p>Kendt for sit arbejde for det amerikanske forlag DC Comics, hvor han blandt andet har leveret tegninger til Batman, Books of Magic, Starman, Preacher og Hellblazer.</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="images/tegneseriemesse_profil1.svg" alt="Mike" style="width:100%">
+        <div class="w3-container">
+          <h4>Jakob Martin Strid</h4>
+          <p class="w3-opacity">Forfatter, tegner</p>
+          <p>Strid er særligt kendt for sin tegneserie Strid, som Politiken bragte fra 2000 med mellemrum indtil 2005. Serien indbragte ham i 2001 Dan Turèll Prisen.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Udstilling -->
+  <div class="w3-container" id="udstillere" style="margin-top:75px">
+    <h2 class="w3-xxlarge w3-text-red">UDSTILLING</h2>
+    <hr class="streg" style="width:50px;border:3px solid #f44336; border-radius:5px" color="#f44336">
+    <p>På dette års messe kan du opleve en masse fantastiske udstillere.</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita, fugit est. Esse magnam nulla consequuntur aspernatur quia labore possimus perspiciatis, aliquid reiciendis accusantium repellendus totam delectus odit autem asperiores impedit animi itaque facere, nobis dolor culpa? Quasi temporibus dicta expedita, dignissimos dolorum reprehenderit maiores corporis mollitia maxime error porro voluptatibus?
+    </p>
+  </div>
+
+  <!-- Udstillere -->
+  <div class="w3-row-padding">
+    <div class="w3-col m3 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="images/udstiller-babyjoker.jpg" alt="John" style="width:100%">
+        <div class="w3-container">
+          <h4 class="padding-udstillere">My comic life</h4>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi expedita fugiat alias. Temporibus, cum architecto.</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m3 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="images/udstiller-tegneserier.jpg" alt="Jane" style="width:100%">
+        <div class="w3-container">
+          <h4 class="padding-udstillere">Heltetid</h4>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi expedita fugiat alias. Temporibus, cum architecto.</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m3 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="images/udstillere-comic-socks.jpg" alt="Mike" style="width:100%">
+        <div class="w3-container">
+          <h4 class="padding-udstillere">Hero Feet</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, non aspernatur eligendi maiores incidunt laudantium!</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m3 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="images/udstiller-tegneserier2.jpg" alt="Mike" style="width:100%">
+        <div class="w3-container">
+          <h4 class="padding-udstillere">Andreas Beck</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima nobis autem debitis, magni voluptas iure.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="w3-row-padding">
+    <div class="w3-col m3 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="images/udstiller-statue-of-liberty.jpg" alt="John" style="width:100%">
+        <div class="w3-container">
+          <h4 class="padding-udstillere">Wolff Media</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit quod molestias eum eligendi officia architecto.</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m3 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="images/udstiller-samlekort.jpg" alt="Jane" style="width:100%">
+        <div class="w3-container">
+          <h4 class="padding-udstillere">Samlere DK</h4>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati eum labore, voluptates minima inventore possimus.</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m3 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="images/udstiller-anime.jpg" alt="Mike" style="width:100%">
+        <div class="w3-container">
+          <h4 class="padding-udstillere">AniReaders</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod voluptatum iste adipisci veniam blanditiis cumque.</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m3 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="images/udstiller-kill-bill-digital-art.jpg" alt="Mike" style="width:100%">
+        <div class="w3-container">
+          <h4 class="padding-udstillere">Tiny Art Emma</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium maiores voluptas ullam magni, aut dicta!</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+ <!-- sponsorer -->
+  
+ <div class="w3-container" id="sponsorer" style="margin-top:75px">
+  <h2 class="w3-xxlarge w3-text-red">SPONSORER</h2>
+  <hr class="streg" style="width:50px;border:3px solid #f44336; border-radius:5px" color="#f44336">
+  <p>Some text our prices. Lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure</p>
+</div>
+
+
+  
+<div class="sponsor">
+  <ul>
+    <li><img src="/tegneserie/images/a.png" alt=""><span><img src="/tegneserie/images/a.png" alt=""></span></li>
+    <li><img src="/tegneserie/images/b.png" alt=""><span><img src="/tegneserie/images/b.png" alt=""></span></li>
+    <li><img src="/tegneserie/images/c.png" alt=""><span><img src="/tegneserie/images/c.png" alt=""></span></li>
+    <li><img src="/tegneserie/images/d.png" alt=""><span><img src="/tegneserie/images/d.png" alt=""></span></li>
+    <li><img src="/tegneserie/images/e.png" alt=""><span><img src="/tegneserie/images/e.png" alt=""></span></li>
+    
+  </ul>
+
+</div>
+
+<!-- Slut-->
+</div>
+
+<!-- Footer -->
+<div class="w3-container w3-padding-32" style="margin-top:20px;padding-right:58px"><p class="w3-right">Copyright 2022 Anette, Dena og Christel</p></div>
+
+<script>
+// Script til den globale navbar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+</script>
+
+</body>
+</html>
